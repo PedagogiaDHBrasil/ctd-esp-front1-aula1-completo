@@ -4,7 +4,7 @@ import { ContextoFormulario } from "../../context/contextoFormulario";
 const Detalhe = () => {
   const { formulario } = useContext(ContextoFormulario);
 
-  const { nome, apelido, email, nomePokemon } = formulario;
+  const { nome, sobrenome, email, nomePokemon } = formulario;
 
   return (
     <div className="detalhe-formulario">
@@ -15,7 +15,7 @@ const Detalhe = () => {
         <h4>Dados do Treinador</h4>
         <div className="lista">
           <p>Nome: {nome}</p>
-          <p>Apelido: {apelido}</p>
+          <p>Sobrenome: {sobrenome}</p>
           <p>Email: {email}</p>
         </div>
       </section>
